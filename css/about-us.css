@@ -1,0 +1,39 @@
+@charset "utf-8";
+#about {
+	background-color: #999;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	color:#5b079c;
+}
+
+@media (min-width: 1200px) {
+	.herounit {
+		width: 1200px;
+		margin: 50px auto 0;
+	}
+}
+section.aboutInfo {
+	width: 950px;
+	margin: 50px auto;
+	color: #dedede;
+	border-top:1px solid #d090ff;
+	text-shadow: 2px 2px #333;
+}
+@media (max-width: 1020px) {
+	section.aboutInfo {
+		width: 95%;
+	}
+}
+section h1 {
+	line-height: 100%;
+}
+section p {
+	font-size: 20px;
+}
+#footer {
+	text-align: center;
+	padding-bottom: 20px;
+}
+#footer span {
+  color: lightblue;
+}

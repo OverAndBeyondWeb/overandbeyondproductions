@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Over and Beyond Productions - Beats for Sale!</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Angsana+New:bold">
+
+    <link href="css/main.css" rel="stylesheet"></head>
+    <body>
+
+        <header class="closed">
+
+            <div class="heading wrap">
+
+                <!-- Branding -->
+                <div class="logo_title">
+                    <img src=images/ice-blue-white177.jpg height="40" width="40" alt="" class="logo" />
+                    <h3 class="title">OVER AND BEYOND</h3>
+                </div>
+
+                <!-- Navigation -->
+                <nav role="navigation" class="main_nav">
+                    <h1 class="hidden">Main Navigation</h1>
+                    <div class="navicon closed hidden"><i class="fa fa-bars"></i></i></div>
+                    <ul>
+                        <li><a href="contact_us.html">Contact</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="#" id="home">Home</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </header>
+
+        <main role="main" class="wrap">
+
+            <!-- Headboard -->
+            <section role="banner" class="herounit">
+                <div id=headboard>
+                    <div class="naviconMobile hidden"><i class="fa fa-bars"></i></i></div>
+                    <img class="img1" src=images/ice-blue-hb.jpg alt="Over and Beyond Productions" />
+                </div>
+            </section>
+
+            <!--Music Player-->
+            <audio id="player" title="&nbsp;" data-songartist="&nbsp;" data-albumart="&nbsp;" src=" ">
+                <source id= ff src=" ">
+                Your browser does not support the HTML audio tag!
+            </audio>
+
+            <!--Interface-->
+            <section class="bread">
+                <div class="music_block_main">
+                    <img class="img2" src=images/music_block_main2.png alt="">
+                    <div id="albumArt">
+                        <img id="trackPic" class="seen" src=images/black-black-logo.jpg alt="wizard">
+                    </div>
+
+                    <!-- Display -->
+                     <div class="infoBox">
+                         <div class="songInfo">
+                            <div class="songartist">J Wiz</div>
+                            <div id="songtitle">&nbsp;</div>
+                            <input id="sliderTime" type="range" min="0"  value="0" step="1"/>
+                            <span id="songTime">00 : 00</span>
+                         </div>
+
+                         <!--Buttons-->
+                         <div class="controls">
+                             <button id="btnPlayPause">&#9658</button>
+                             <button id="btnStop">&#9632;</button>
+                             <button id="btnPrevious">|&#9668;&#9668;</button>
+                             <button id="btnNext">&#9658&#9658|</button>
+                             <button id="btnMute">MUTE</button>
+                             <input id="volumeSlider" type="range" min="0" max="100" value="30" step="1">
+                         </div><!--End Buttons-->
+                    </div>
+                    <!--End Display-->
+
+                    <div id="playList">
+                        <ul id="fullList"></ul>
+                    </div>
+
+                     <div class="info">
+                        jwizard77@gmail.com<br/>overandbeyondproductions@gmail.com
+                    </div>
+
+                </div>
+            </section>
+                <!--END Interface-->
+
+            <!-- Music Block Child -->
+            <div class="music_block_child"></div>
+            <div class="push"></div>
+
+
+            
+        </main><!-- END Wrap Overall -->
+        <div class="footer wrap">
+          <footer role="complimentary" class="clearfix wrap">
+            <div class="copyright">&copy; 2014 Over & Beyond Productions | Web Design by Juan Fox</div>
+          </footer>
+        </div>
+
+    <!--**HANDLEBARS TEMPLATE**-->
+    <script id="trackNames" type="text/x-handlebars-template">
+        {{#each this}}
+        <li class="playList"><i class="fa fa-play-circle"></i>
+            {{title}}</li>
+        {{/each}}
+    </script>
+    <!--**JAVASCRIPT**-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bundle.js"></script></body>
+</html>
